@@ -5,7 +5,7 @@
   --blue-color: #92CCCD;
   --darkgrey: #31343D;
   --sec-heading-color: #445876;
-  --highlight: rgb(123, 107, 17, 1);
+  --highlight: rgb(199, 172, 19, 1);
   --transition: 1s;
 
   --normal-font: 400;
@@ -165,7 +165,7 @@ header nav ul li a:hover {
 
 #surf-report {
   grid-area: surf-report;
-  background-image: url("../images/02-surf-cropped.jpg");
+  background-image: url("../images/02-surf-cropped-blue.jpg");
 }
 
 #led-wall {
@@ -185,7 +185,7 @@ header nav ul li a:hover {
 
 #run-buddy {
   grid-area: run-buddy;
-  background-image: url("../images/02-run-buddy.jpg");
+  background-image: url("../images/02-run-buddy-cropped.jpg");
 }
 
 .workGridArea {
@@ -202,7 +202,7 @@ header nav ul li a:hover {
 
 /* set an outer and inner drop shadow on the picture to create a glowing effect on hover */
 .workGridArea:hover {
-  box-shadow: inset 0 0 600px var(--highlight), 0 0 0px var(--highlight);
+  box-shadow: inset 0 0 200px var(--highlight), 0 0 0px var(--highlight);
 }
 
 .subheading {
