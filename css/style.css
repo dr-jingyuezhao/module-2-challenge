@@ -6,6 +6,7 @@
   --darkgrey: #31343D;
   --sec-heading-color: #445876;
   --highlight: rgb(199, 172, 19, 1);
+  --links: yellow;
   --transition: 1s;
   --line-height: 1.5;
   --margin: 0;
@@ -39,7 +40,7 @@ header h1 {
   font-weight: bold;
   font-size: 40px;
   color: var(--darkgrey);
-  width: 25%;
+  padding: 0 20px;
   background-color: var(--blue-color);
 }
 
@@ -48,13 +49,14 @@ header nav {
   width: 75%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding: 10px;
   margin: auto;
 }
 
 header nav ul li {
   margin: 0px 20px;
-  display: inline;
+  display: inline-block;
   padding: 5px;
   font-weight: lighter;
   border-bottom: 4px solid var(--blue-color);
@@ -69,7 +71,7 @@ header nav ul li a {
 header nav ul li a:hover {
   text-decoration: none;
   cursor: pointer;
-  color: #fce138;
+  color: var(--links);
 }
 
 /* the subtitle banner */
@@ -231,9 +233,9 @@ header nav ul li a:hover {
 
 .contact-links li {
   list-style: none;
-  margin: 0px 35px;
-  display: inline;
-  padding: 5px;
+  margin: 10px 35px;
+  display: inline-block;
+  padding: 2px;
   border-bottom: 4px solid var(--sec-heading-color);
   font-size: 18px;
 }
@@ -242,4 +244,57 @@ header nav ul li a:hover {
   text-decoration: none;
   font-weight: bold;
   color: var(--darkgrey);
+}
+
+.contact-links li a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--links);
+}
+
+/* style for a responsive design */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightyellow;
+  }
+
+  header, .page-section {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .section-title {
+    margin-left: 50px;
+    
+  }
+
+  /* new style of workGrid*/
+  #workGrid {
+    margin: 20px 40px 20px 20px;
+    display: grid;
+    min-width: 200px;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "surf-report"
+      "led-wall"
+      "calculator"
+      "puzzles"
+      "run-buddy"
+    ;
+  }
+
+
+}
+
+
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+  header,
+  .hero,
+  .sections {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
