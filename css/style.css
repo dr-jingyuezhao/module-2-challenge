@@ -13,8 +13,6 @@
   --padding: 0;
 }
 
-* {}
-
 body {
   background-color: var(--bgd-color);
   margin: var(--margin);
@@ -258,14 +256,14 @@ header nav ul li a:hover {
     background-color: lightyellow;
   }
 
-  header, .page-section {
+  header,
+  .page-section {
     height: auto;
     flex-direction: column;
   }
 
   .section-title {
     margin-left: 50px;
-    
   }
 
   /* new style of workGrid*/
@@ -283,11 +281,7 @@ header nav ul li a:hover {
       "run-buddy"
     ;
   }
-
-
 }
-
-
 
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
