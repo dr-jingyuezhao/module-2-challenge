@@ -5,7 +5,7 @@
   --blue-color: #92CCCD;
   --darkgrey: #31343D;
   --sec-heading-color: #445876;
-  --highlight: rgba(255, 255, 0, 0.7); 
+  --highlight: rgb(123, 107, 17, 1);
   --transition: 1s;
 
   --normal-font: 400;
@@ -16,7 +16,7 @@
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
-  
+
 }
 
 * {}
@@ -110,7 +110,7 @@ header nav ul li a:hover {
   display: flex;
   justify-content: flex-start;
   margin: 0px 50px;
-  
+
 }
 
 /* section title style */
@@ -165,7 +165,7 @@ header nav ul li a:hover {
 
 #surf-report {
   grid-area: surf-report;
-  background-image: url("../images/02-surf.jpg");
+  background-image: url("../images/02-surf-cropped.jpg");
 }
 
 #led-wall {
@@ -202,11 +202,11 @@ header nav ul li a:hover {
 
 /* set an outer and inner drop shadow on the picture to create a glowing effect on hover */
 .workGridArea:hover {
-  box-shadow: inset 0 0 200px var(--highlight), 0 0 0px var(--highlight);
+  box-shadow: inset 0 0 600px var(--highlight), 0 0 0px var(--highlight);
 }
 
 .subheading {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -229,16 +229,15 @@ header nav ul li a:hover {
   margin: 0;
 }
 
-/*  */
-/* Contact Styles */
-.contact-links {
+/* contact section style */
+#links {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
 }
 
 .contact-links li {
   list-style: none;
-  margin: 0px 20px;
+  margin: 0px 35px;
   display: inline;
   padding: 5px;
   border-bottom: 4px solid var(--sec-heading-color);
@@ -246,7 +245,6 @@ header nav ul li a:hover {
 }
 
 .contact-links li a {
-  padding: 5px;
   text-decoration: none;
   font-weight: bold;
   color: var(--darkgrey);
