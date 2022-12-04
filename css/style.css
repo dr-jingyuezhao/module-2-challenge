@@ -7,26 +7,19 @@
   --sec-heading-color: #445876;
   --highlight: rgb(199, 172, 19, 1);
   --transition: 1s;
-
-  --normal-font: 400;
-  --bold-font: 700;
-  --bolder-font: 900;
-  --primary-shadow: #8b8eaf;
-  --secondary-shadow: #a17a69;
-  --bottom-margin: 0.5rem;
-  --bottom-margin-2: 1rem;
-  --line-height: 1.7rem;
-
+  --line-height: 1.5;
+  --margin: 0;
+  --padding: 0;
 }
 
 * {}
 
 body {
   background-color: var(--bgd-color);
-  margin: 0;
-  padding: 0;
+  margin: var(--margin);
+  padding: var(--padding);
   font-family: var(--font-family);
-  line-height: 1.5;
+  line-height: var(--line-height);
 }
 
 /* header style */
