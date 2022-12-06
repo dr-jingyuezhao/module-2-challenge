@@ -18,7 +18,8 @@ This project needs to meet the critical requirements necessary to develop a port
 * When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport
 
 ## Installation
-Not applicable.
+The link to my portfolio page:
+https://dr-jingyuezhao.github.io/module-2-challenge/
 
 ## Usage 
 
